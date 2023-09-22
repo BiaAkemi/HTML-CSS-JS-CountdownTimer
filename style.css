@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -45,13 +45,14 @@ body {
     fill: transparent;
     stroke-width: 8;
     stroke: #282828;
-    transform: translate(5px, 5px);
+    transform: translate(5px,5px);
 }
 
 #time .circle svg circle:nth-child(2)
 {
     stroke: var(--clr);
     stroke-dasharray: 440;
+    stroke-dashoffset: 440;
 }
 
 #time div
@@ -66,7 +67,7 @@ body {
 #time div span
 {
     position: absolute;
-    transform: translateX(-50%) translateY(-10px);
+    transform: translateX(-50%) translateY(5px);
     font-size: 0.35em;
     font-weight: 300;
     letter-spacing: 0.1em;
@@ -82,4 +83,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    z-index: 1000;
+}
+
+#time .dots::before
+{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+    0 0 60px var(--clr);
+}
+
+.newYear
+{
+    font-size: 8em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 0.6em;
+}
+
+.newYear span 
+{
+    font-size: 0.5em;
+    font-weight: 300;
+
 }
