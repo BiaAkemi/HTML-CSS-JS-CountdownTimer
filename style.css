@@ -7,7 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+body 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,8 @@ body {
     background: #2f363e;
 }
 
-#time {
+#time 
+{
     display: flex;
     gap: 30px;
 }
@@ -45,6 +47,7 @@ body {
     fill: transparent;
     stroke-width: 8;
     stroke: #282828;
+    stroke-linecap: round;
     transform: translate(5px,5px);
 }
 
@@ -106,6 +109,7 @@ body {
     color: #fff;
     text-align: center;
     line-height: 0.6em;
+    display: none;
 }
 
 .newYear span 
